@@ -1,7 +1,8 @@
 <template>
     <div><span id="header">
             <span id="logo">
-                <img src="../assets/Logos/INK_Logo_MainMaroon.png" alt="inkubator maroon logo" width="150px">
+                <router-link to="/"><img src="../assets/Logos/INK_Logo_MainMaroon.png" alt="inkubator maroon logo"
+                        width="150px"></router-link>
             </span>
             <span id="nav">
                 <router-link class="navlink" to="/read">Read</router-link>
