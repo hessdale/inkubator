@@ -4,19 +4,19 @@
         <div id="support">
             <div id="donate">
                 <div id="purple"></div>
-                <button class="buttonStyle">DONATE HERE</button>
+                <button class="button">DONATE HERE</button>
             </div>
             <div id="presale">
                 <div id="pink"></div>
-                <button class="buttonStyle">PRE-SALE HERE</button>
+                <button class="button">PRE-SALE HERE</button>
             </div>
             <div id="subscribe">
                 <div id="orange"></div>
-                <button class="buttonStyle">SUBSCRIBE HERE</button>
+                <button class="button">SUBSCRIBE HERE</button>
             </div>
             <div id="follow ">
                 <div id="purple"></div>
-                <button class="buttonStyle">FOLLOW HERE</button>
+                <button class="button">FOLLOW HERE</button>
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@ export default {
     height: 150px;
 }
 
-.buttonStyle {
+.button {
     border-color: #682138;
     border-width: 1px;
     background-color: #0000;
