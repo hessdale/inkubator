@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="about">
-            <div class="paragraphStylingEnd">
+            <div class="paragraphStylingStart">
                 <h1 class="title">We Are Inkubator</h1>
                 <p class="info">At Inkubator Magazine, we are committed to
                     celebrating the voices of our local community by
@@ -10,7 +10,7 @@
                     publication, our mission goes beyond storytelling; we
                     strive to create a platform that fosters connection,
                     nurtures creativity, and empowers both emerging
-                    and established writers to share their narratives</p>
+                    and established writers to share their narratives.</p>
                 <button class="button">DONATE</button>
             </div>
             <div>
@@ -18,8 +18,8 @@
             </div>
         </div>
         <div id="writers">
-            <div id="purple"></div>
-            <div class="paragraphStylingStart">
+            <img src="../assets/highfive.gif" alt="gif of two people highfiving" width="300px">
+            <div class="paragraphStylingEnd">
                 <h1 class="title">Uplift Local Writers</h1>
                 <p class="info">Our magazine is fuelled by the voices of our
                     community. The stories, visuals, and resources
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div id="community">
-            <div>
+            <div class="paragraphStylingStart">
                 <h1 class="title">Invest In Our Community</h1>
                 <p class="info">As a non-profit, 100% of our proceeds are
                     invested back into our community. That
@@ -41,7 +41,7 @@
         </div>
         <div id="spaces">
             <div id="pink"></div>
-            <div>
+            <div class="paragraphStylingEnd">
                 <h1 class="title">Build Creative Spaces</h1>
                 <p class="info">With Vancouver's vast and diverse network
                     of creatives, it is crucial to build spaces to
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div id="resources">
-            <div>
+            <div class="paragraphStylingStart">
                 <h1 class="title">Share Resources</h1>
                 <p class="info">We aim to share a plethora of resources from
                     interviews with local artists to helpful guides
@@ -78,11 +78,15 @@ export default {
 .paragraphStylingEnd {
     display: grid;
     justify-items: end;
+    margin: 20px;
+    text-align: end;
 }
 
 .paragraphStylingStart {
     display: grid;
     justify-items: start;
+    margin: 20px;
+    text-align: start;
 }
 
 #about {
@@ -159,12 +163,13 @@ export default {
 
 .title {
     color: #682138;
-    font-style: 'Jost', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-weight: 550;
 }
 
 .info {
     color: #682138;
-    font-style: 'Baskervvile', sans-serif;
+    font-family: 'Baskervville', sans-serif;
 }
 
 #about {

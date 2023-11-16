@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="started">
-            <div>
+            <div class="paragraphStart">
                 <h1 class="title">How It Started</h1>
                 <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati consequatur
                     harum
@@ -14,7 +14,7 @@
         </div>
         <div id="now">
             <div class="block"></div>
-            <div>
+            <div class="paragraphEnd">
                 <h1 class="title">Where It Is Now</h1>
                 <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, error fugiat aliquid nam
                     reprehenderit,
@@ -25,7 +25,7 @@
 
         </div>
         <div id="become">
-            <div>
+            <div class="paragraphStart">
                 <h1 class="title">What It Will Become</h1>
                 <p class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, fugit. Quaerat impedit
                     eveniet
@@ -40,7 +40,9 @@
             <p class="info" id="beigeInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deleniti rem
                 reiciendis eligendi
                 veniam, nulla ullam ducimus! Iusto quas veritatis suscipit magni consequatur, nostrum eius asperiores rerum,
-                recusandae quod iste.</p>
+                recusandae quod iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti, hic molestiae
+                sequi eaque eos quisquam, quo suscipit commodi fuga, ab rem. Dignissimos mollitia velit ipsa suscipit rem
+                neque ex.</p>
         </div>
     </div>
 </template>
@@ -54,6 +56,20 @@ export default {
 <style scoped>
 @import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Baskervville:regular,italic);
+
+.paragraphEnd {
+    display: grid;
+    justify-items: end;
+    margin: 20px;
+    text-align: end;
+}
+
+.paragraphStart {
+    display: grid;
+    justify-items: start;
+    margin: 20px;
+    text-align: start;
+}
 
 #beigeTitle {
     color: #f3e8d7;
@@ -85,10 +101,10 @@ export default {
 }
 
 #why {
-
+    padding: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
     background-color: #682138;
-    height: 20vh;
-
 }
 
 .info {
