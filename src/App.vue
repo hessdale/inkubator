@@ -11,4 +11,8 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+
+body {
+  margin: 0;
+}
 </style>

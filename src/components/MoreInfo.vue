@@ -33,16 +33,24 @@
                 </div>
             </div>
             <div id="info">
-                <h3 class="title">GENERAL INQUIRIES</h3>
-                <a class="email" href="mailto:info@inkubator.com">info@inkubator.com</a>
-                <h3 class="title">SUBMISSIONS</h3>
-                <a class="email" href="mailto:artists@inkubator.com">artists@inkubator.com</a>
-                <h3 class="title">PRESS</h3>
-                <a class="email" href="mailto:press@inkubator.com">press@inkubator.com</a>
-                <h3 class="title">MAILING</h3>
-                <p class="name">936 Clark Drive
-                    Vancouver, BC
-                    V5L 3J8</p>
+                <div>
+                    <h3 class="title">GENERAL INQUIRIES</h3>
+                    <a class="email" href="mailto:info@inkubator.com">info@inkubator.com</a>
+                </div>
+                <div>
+                    <h3 class="title">SUBMISSIONS</h3>
+                    <a class="email" href="mailto:artists@inkubator.com">artists@inkubator.com</a>
+                </div>
+                <div>
+                    <h3 class="title">PRESS</h3>
+                    <a class="email" href="mailto:press@inkubator.com">press@inkubator.com</a>
+                </div>
+                <div>
+                    <h3 class="title">MAILING</h3>
+                    <p class="name">936 Clark Drive <br>
+                        Vancouver, BC <br>
+                        V5L 3J8</p>
+                </div>
             </div>
         </div>
     </div>
@@ -58,6 +66,7 @@ export default {
 @import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Baskervville:regular,italic);
 
+
 #mainTitle {
     color: #682138;
     font-family: 'Jost', sans-serif;
@@ -67,6 +76,7 @@ export default {
 .email {
     text-decoration: none;
     color: #682138;
+    font-family: 'Baskervville', sans-serif;
 }
 
 .name {
@@ -89,6 +99,7 @@ export default {
 #contact {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
 }
 
 #ellie {
