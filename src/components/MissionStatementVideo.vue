@@ -1,9 +1,12 @@
 <template>
     <div>
         <div id="nowPlaying">
-            <!-- <video width="320" height="240" controls>
-                <source src="../assets/mountain.mp4" type="video/mp4">
-            </video> -->
+            <img @click="closeVideo()" src="../assets/undo.svg" alt="undo icon" width="40px">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/WbfjRoQVZSw?si=IEhWxNI-s5Suvm77&amp;start=25"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
         <div id="videoBackground">
             <div id="videoTitle">
@@ -18,14 +21,21 @@
 export default {
     methods: {
         playVideo() {
-
+            document.getElementById("nowPlaying").style.display = 'block';
+            document.getElementById("watchNow").style.display = 'none';
+            document.getElementById("videoBackground").style.display = 'none';
+        },
+        closeVideo() {
+            document.getElementById("nowPlaying").style.display = 'none';
+            document.getElementById("watchNow").style.display = 'block';
+            document.getElementById("videoBackground").style.display = 'block';
         }
     },
 }
 </script>
 
 <style scoped>
-#NowPlaying {
+#nowPlaying {
     display: none;
 
 }
